@@ -1,0 +1,16 @@
+{% include 'client_satisfaction_system/header.html'%}
+
+	<div class="container">
+        <!--Creacion del formulario y envio a traves del metodo post a la siguiente url-->
+            <form type="form" class="login-form" action="/login" method="POST">
+                <h2>Inicia session</h2>
+
+                <input type="text" name="usuario" id="usuario" placeholder="Usuario" required="true"/>
+                <input type="password" name="contrasenia" id="contrasenia" placeholder="Contrasenia" required="true"/>
+
+                <button type="submit" id = "inicio">Inicia session</button>
+
+            </form>
+   </div>
+
+{% include 'client_satisfaction_system/footer.html'%}
